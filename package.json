@@ -15,8 +15,7 @@
     "@hono/oauth-providers": "0.4.0",
     "@prisma/client": "5.13.0",
     "hono": "4.2.7",
-    "iron-session": "8.0.1",
-    "uuid": "9.0.1"
+    "iron-session": "8.0.1"
   },
   "devDependencies": {
     "dotenv": "16.4.5",
