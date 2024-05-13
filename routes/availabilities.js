@@ -21,6 +21,7 @@ router.post(
       candidateId,
       availability
     };
+//    console.log(`scheduleId=${scheduleId}, userId=${userId}, candidateId=${candidateId}, availability=${availability};`);
     await prisma.availability.upsert({
       where: {
         availabilityCompositeId: {
@@ -31,7 +32,7 @@ router.post(
       create: data,
       update: data
     });
-
+    console.log(`availability=${availability};`);
     res.json({ status: 'OK', availability: availability });
   }
 );
